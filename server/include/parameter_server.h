@@ -52,9 +52,6 @@ private:
   // Check whether parameter name contains "persistent." in the parameter list
   bool CheckPersistentParam(const std::vector<rclcpp::Parameter> & parameters);
 
-  // Check flag to store file
-  std::atomic_bool param_update_;
-
   // yaml file to load/store
   std::string persistent_yaml_file_;
 
